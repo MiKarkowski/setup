@@ -4,13 +4,14 @@
 ## From Console
 1. Install brew
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 2. Install iterm2
 ```bash
-brew cask install iterm2
+brew install --cask iterm2
 ```
-3. Install iTerm2
+
+3. Install Rectangle (screen management)
 ```bash
 brew install --cask rectangle
 ```
@@ -24,36 +25,38 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```bash
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ```
-Then open ~/.zshrc file with $ open ~/.zshrc
-and set ZSH_TEME=“powerlevel10k/powerlevel10k”
+
+Then open ~/.zshrc file with `vim ~/.zshrc` and set `ZSH_TEME=“powerlevel10k/powerlevel10k”`
 
 <img src="img/zsh_theme.png" width="500px">
+
 6. Quit iTerm and reopen. 
 
-Go thought the configurator that will pop up on the console acording to your needs
+Go thought the configurator that will pop up on the console according to your needs
 
 7. iTerm2 customizations
 
-iTerm → Preferences → Profiles → Colors → Color Presets → Solarized Dark
+iTerm → Settings → Profiles → Colors → Color Presets → Solarized Dark
 
-8. Auto-suggestions plugin
+8. Word jumps and delete
+
+iTerm → Settings → Profiles → Keys
+- Left option → Esc+
+- add a new key mapping: Key Mapping tab → Press `+` → Press `⌥` + `←` → Select “Send Escape Sequence” for action. → Input `b` on Esc+.
+- add a new key mapping: Key Mapping tab → Press `+` → Press `⌥` + `→` → Select “Send Escape Sequence” for action. → Input `f` on Esc+.
+
+<img src="img/escaping.png" width="500px">
+<img src="img/move_forward.png" width="500px">
+<img src="img/removing_jump.png" width="500px">
+
+
+9. Auto-suggestions plugin
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 to set the plugin, run `vim ~/.zshrc` and set `plugins=(git zsh-autosuggestions)`
 <img src="img/zsh_suggestions.png" width="500px">
-
-9. Word jumps and delete
-
-iTerm → Preferences → Profiles → Keys
-- Left option → Esc+
-- add a new Key Mapping → Press `⌥` + `←` → Select “Send Escape Sequence” for action. → Input ‘b’ on Esc+.
-
-<img src="img/escaping.png" width="500px">
-<img src="img/move_forward.png" width="500px">
-<img src="img/removing_jump.png" width="500px">
-
 
 10. Remove apple sign
 
@@ -82,10 +85,31 @@ sdk version
 sdk install java
 ```
 
+13. Docker
+```bash
+brew install --cask docker 
+```
+
+14. Docker
+```bash
+brew install --cask postman 
+```
+
+15. VS Code
+```bash
+brew install --cask visual-studio-code 
+```
+
+16. IntellijIdea
+```bash
+brew install --cask intellij-idea 
+```
+
+17. Change default scrolling direction
+
+Click apple menu (left top corner) → System Preferences → click Scroll & Zoom → toggle Natural scroll direction to off
+
 
 ## Applications
 - IntelliJ Idea
-- VS Code
-- Postman
 - Teams/Slack/Mail
-- Docker
