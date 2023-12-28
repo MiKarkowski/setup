@@ -120,4 +120,4 @@ brew install --cask microsoft-outlook
 brew install --cask microsoft-outlook
 ```
 
-Open Project ->  Choose location of umbrella directory
+Open Project ->  Choose location of umbrella directory  
