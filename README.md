@@ -87,29 +87,37 @@ sdk install java
 
 13. Docker
 ```bash
-brew install --cask docker 
+brew install --cask docker
 ```
 
 14. Docker
 ```bash
-brew install --cask postman 
+brew install --cask postman
 ```
 
 15. VS Code
 ```bash
-brew install --cask visual-studio-code 
+brew install --cask visual-studio-code
 ```
 
 16. IntellijIdea
 ```bash
-brew install --cask intellij-idea 
+brew install --cask intellij-idea
 ```
 
 17. Change default scrolling direction
 
 Click apple menu (left top corner) → System Preferences → click Scroll & Zoom → toggle Natural scroll direction to off
 
+18. Microsoft Teams
+```
+brew install --cask microsoft-teams
+brew install --cask microsoft-outlook
+```
 
-## Applications
-- IntelliJ Idea
-- Teams/Slack/Mail
+19. Microsoft Outlook
+```
+brew install --cask microsoft-outlook
+```
+
+Open Project ->  Choose location of umbrella directory
